@@ -41,7 +41,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.95;
     visibility: hidden;
 
     &.show {
@@ -93,6 +93,7 @@
             background: url('../img/portrait.jpg');
             border-radius: 50%;
             border: solid 3px $secondary-color;
+            opacity: 1;
         }
     }
 
