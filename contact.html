@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact me</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="all"
+        href="https://cdn.jsdelivr.net/gh/hankchizljaw/boilerform@master/dist/css/boilerform.min.css" />
+
 </head>
+
 <body>
     <!-- replaced the overlay div with after on scss which have the same effect -->
     <!-- <div class="overlay"></div> -->
@@ -40,30 +46,36 @@
     </header>
 
     <main id="contact">
-        <h1 class="lg-heading">
-            Contact <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-            this is how you can reach me
-        </h2>
-        <div class="boxes">
-            <span class="text-secondary">Email:</span>
-            salmansiphenkosi@gmail.com
-        </div>
-
-        <div class="boxes">
-            <span class="text-secondary">Phone:</span>
-            081 473 7704
-        </div>
-
-        <!-- <div class="boxes"> 
-            <span class="text-secondary">Address:</span>
-            19828 lambatha road 
-        </div> -->
+        <form class="boilerform" action="" method="post">
+            <fieldset class="c-form">
+                <legend class="c-form__heading">Contact form</legend>
+                <div class="c-form__row">
+                    <label for="name" class="c-label">Name</label>
+                    <input type="text" name="name" id="name" class="c-input-field" value="" autocorrect="off"
+                        required />
+                </div>
+                <div class="c-form__row">
+                    <label for="email" class="c-label">Email</label>
+                    <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off"
+                        class="c-input-field" required />
+                </div>
+                <div class="c-form__row">
+                    <label for="message" class="c-label">Your message</label>
+                    <textarea name="message" id="message" class="c-input-field c-input-field--multiline"
+                        rows="10"></textarea>
+                </div>
+                <div class="c-form__row">
+                    <button class="c-button" type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
     </main>
-        <footer id="main-footer">Copyright &copy; 2018
+
+
+    <footer id="main-footer">Copyright &copy; 2018
     </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

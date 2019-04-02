@@ -200,24 +200,23 @@ main {
       border-color: #4286f4;
       transition: all 0.5s ease-out; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
+.c-form {
+  display: block;
+  border: none;
+  margin: 50px auto;
+  max-width: 500px; }
+  .c-form__heading {
+    display: block;
+    width: 100%;
     font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #4286f4;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+    line-height: 1.2;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0; }
+  .c-form__row + .c-form__row {
+    padding-top: 25px; }
+  .c-form__row [name] {
+    min-width: 66.66667%; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
